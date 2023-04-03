@@ -1,0 +1,133 @@
+.latest-match-container {
+  background-color: #1e293b;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  .latest-match-container {
+    display: flex;
+  }
+}
+
+.team-match-info-logo-container {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #475569;
+}
+@media (min-width: 768px) {
+  .team-match-info-logo-container {
+    justify-content: space-between;
+    width: 62%;
+    border: none;
+  }
+}
+
+.match-info {
+}
+
+.competing-team-name {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Bree serif;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  .competing-team-name {
+    font-size: 33px;
+    font-weight: 100;
+  }
+}
+
+.match-date {
+  color: #ffffff;
+  font-size: 19px;
+  font-family: Bree serif;
+  font-weight: 300;
+}
+
+.match-venue {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Bree serif;
+  font-weight: normal;
+}
+
+.match-result {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Bree serif;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+  .match-date {
+    font-size: 25px;
+  }
+  .match-venue {
+    font-size: 16px;
+  }
+
+  .match-result {
+    font-size: 14px;
+  }
+}
+
+.competing-team-logo {
+  height: 80px;
+  width: 100px;
+  margin-left: 10px;
+}
+@media (min-width: 768px) {
+  .competing-team-logo {
+    height: 190px;
+    width: 190px;
+    margin-left: 16px;
+  }
+}
+
+.team-match-more-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+.team-match-more-info {
+    flex-grow: 1;
+ align-items: flex-end;
+  width: 60%px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+}
+
+
+.more-info-heading {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: Bree serif;
+  font-weight: normal;
+}
+
+.more-info-text {
+  color: #ffffff;
+  font-size: 13px;
+  font-family: Bree serif;
+  font-weight: normal;
+}
+@media (min-width: 768px) {
+.more-info-heading {
+  font-size: 16px;
+  font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.more-info-text {
+  font-size: 13px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+}
