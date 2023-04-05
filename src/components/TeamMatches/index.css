@@ -1,77 +1,68 @@
-.RCB {
-  background-image: linear-gradient(#a4261d, #1e293b);
-}
-
-.KKR {
-  background-image: linear-gradient(#5755a7, #1e293b);
-}
-
-.KXP {
-  background-image: linear-gradient(#d91c1f, #1e293b);
-}
-
-.CSK {
-  background-image: linear-gradient(#f7db00, #1e293b);
-}
-
-.RR {
-  background-image: linear-gradient(#da237b, #ffffff33);
-}
-
-.MI {
-  background-image: linear-gradient(#13418b, #ffffff33);
-}
-
-.SH {
-  background-image: linear-gradient(#f26d22, #ffffff33);
-}
-
-.DC {
-  background-image: linear-gradient(#4f5db0, #0f172a);
-}
-
-.app-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-size: cover;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .app-container {
-    padding-top: 65px;
-    padding-bottom: 55px;
-  }
-}
-
 .team-matches-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.rcb {
+  background: linear-gradient(to top, #1e293b, #a4261d);
+}
+
+.kkr {
+  background: linear-gradient(to top, #1e293b, #5755a7);
+}
+
+.kxp {
+  background: linear-gradient(to top, #1e293b, #d91c1f);
+}
+
+.csk {
+  background: linear-gradient(to top, #1e293b, #f7db00);
+}
+
+.rr {
+  background: linear-gradient(to top, #1e293b, #da237b);
+}
+
+.mi {
+  background: linear-gradient(to top, #1e293b, #13418b);
+}
+
+.srh {
+  background: linear-gradient(to top, #1e293b, #f26d22);
+}
+
+.dc {
+  background: linear-gradient(to top, #1e293b, #4f5db0);
+}
+
+.responsive-container {
   width: 90%;
+  max-width: 500px;
+  margin-top: 48px;
 }
 
-.team-banner-img {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.latest-matches-heading {
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Bree serif;
-}
-@media (min-width: 768px) {
-  .latest-matches-heading {
-    font-size: 17px;
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    margin-top: 96px;
+    max-width: 1110px;
   }
 }
 
-.match-card-items-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0px;
+.team-banner {
   width: 100%;
+}
+
+.recent-matches-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .recent-matches-list {
+    margin-top: 32px;
+  }
 }

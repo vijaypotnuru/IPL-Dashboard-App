@@ -1,46 +1,47 @@
 import './index.css'
 
 const LatestMatch = props => {
-  const {latestMatchDetails} = props
+  const {latestMatchData} = props
   const {
-    umpires,
-    result,
-    manOfTheMatch,
+    competingTeam,
     date,
     venue,
-    competingTeam,
+    result,
     competingTeamLogo,
     firstInnings,
     secondInnings,
-  } = latestMatchDetails
+    manOfTheMatch,
+    umpires,
+  } = latestMatchData
 
   return (
     <div className="latest-match-container">
-      <div className="team-match-info-logo-container">
-        <div className="match-info">
-          <p className="competing-team-name">{competingTeam}</p>
-          <p className="match-date">{date}</p>
-          <p className="match-venue">{venue}</p>
-          <p className="match-result">{result}</p>
+      <h1 className="latest-match-heading">Latest Matches</h1>
+      <div className="latest-match-card">
+        <div className="latest-match-details-logo-container">
+          <div className="latest-match-details-1">
+            <p className="latest-match-team-name">{competingTeam}</p>
+            <p className="latest-match-date">{date}</p>
+            <p className="match-details">{venue}</p>
+            <p className="match-details">{result}</p>
+          </div>
+          <img
+            src={competingTeamLogo}
+            className="latest-match-team-logo"
+            alt={`latest match ${competingTeam}`}
+          />
         </div>
-        <img
-          className="competing-team-logo"
-          src={competingTeamLogo}
-          alt={`latest match ${competingTeam}`}
-        />
-      </div>
-      <div className="team-match-more-info">
-        <h1 className="more-info-heading">First Innings</h1>
-        <p className="more-info-text">{firstInnings}</p>
-
-        <h1 className="more-info-heading">Second Innings</h1>
-        <p className="more-info-text">{secondInnings}</p>
-
-        <h1 className="more-info-heading">Man Of The Match</h1>
-        <p className="more-info-text">{manOfTheMatch}</p>
-
-        <h1 className="more-info-heading">Umpires</h1>
-        <p className="more-info-text">{umpires}</p>
+        <hr className="separator" />
+        <div className="latest-match-details-2">
+          <p className="latest-match-details-label">First Innings</p>
+          <p className="latest-match-details-value">{firstInnings}</p>
+          <p className="latest-match-details-label">Second Innings</p>
+          <p className="latest-match-details-value">{secondInnings}</p>
+          <p className="latest-match-details-label">Man Of The Match</p>
+          <p className="latest-match-details-value">{manOfTheMatch}</p>
+          <p className="latest-match-details-label">Umpires</p>
+          <p className="latest-match-details-value">{umpires}</p>
+        </div>
       </div>
     </div>
   )

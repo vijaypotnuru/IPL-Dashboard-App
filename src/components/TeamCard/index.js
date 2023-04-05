@@ -3,16 +3,16 @@ import {Link} from 'react-router-dom'
 import './index.css'
 
 const TeamCard = props => {
-  const {teamData} = props
-  const {id, name, teamImageUrl} = teamData
+  const {teamDetails} = props
+  const {name, id, teamImageURL} = teamDetails
 
   return (
-    <Link to={`/team-matches/${id}`} className="ipl-team-link">
-      <li className="ipl-team-item">
-        <img className="ipl-team-logo" src={teamImageUrl} alt={name} />
-        <p className="ipl-team-name">{name}</p>
-      </li>
-    </Link>
+    <li className="team-item">
+      <Link to={`/team-matches/${id}`} className="link">
+        <img src={teamImageURL} alt={name} className="team-logo" />
+        <p className="team-name">{name}</p>
+      </Link>
+    </li>
   )
 }
 
